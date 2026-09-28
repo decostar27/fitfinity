@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FitFinity Fitness — Personal training, modern equipment, no contracts. Transform your body, transform your life. Located in Pitakotte, Sri Lanka.">
+  <meta name="author" content="FitFinity Fitness">
+  <title>FitFinity Fitness-Beyond Your Limits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="Logo White@300x.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="noise-overlay"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <a href="#" class="nav-logo">
+      <img src="Logo White@300x.png" alt="FitFinity" class="nav-logo-img">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#trainers">Our Trainers</a></li>
+      <li><a href="memberships.html">Memberships and Pricing</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-accent nav-btn" id="joinBtn">Join the FitFinity Family</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO — IMAGE SLIDER ========== -->
+  <div class="hero-container" id="heroContainer">
+    <!-- Slider Backgrounds -->
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active"
+        style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80');">
+      </div>
+      <div class="hero-slide"
+        style="background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1920&q=80');">
+      </div>
+      <div class="hero-slide"
+        style="background-image: url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1920&q=80');">
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content" id="heroContent">
+      <h1 class="animate-up delay-1">WHERE<br>HUMAN LIMITS<br>BECOME <span class="text-accent">INFINITE.</span></h1>
+      <div class="hero-actions animate-up delay-3">
+        <a href="memberships.html" class="btn-accent">CHECK OUR MEMBERSHIPS &rarr;</a>
+        <a href="#trainers" class="btn-secondary">Meet Our Trainers</a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Schedule section removed as requested -->
+
+  <!-- ========== ABOUT US (THE STORY) ========== -->
+  <section id="about" class="bg-dark" style="padding: 120px 20px;">
+    <div class="container" style="max-width: 900px; text-align: center;">
+      <div class="reveal">
+        <h2
+          style="font-size: clamp(2.5rem, 6vw, 4rem); text-transform: uppercase; font-family: var(--font-heading); color: #fff; margin-bottom: 30px;">
+          The <span class="text-accent">FitFinity</span> Story
+        </h2>
+        <p style="font-size: 1.25rem; line-height: 1.8; color: #ccc; margin-bottom: 25px;">
+          Over the past year, FitFinity Fitness has grown with a singular vision: to create a sanctuary for those who
+          refuse to settle for average. We didn't just want to build another commercial gym. We set out to forge an
+          environment where luxury meets raw performance.
+        </p>
+        <p style="font-size: 1.25rem; line-height: 1.8; color: #ccc; margin-bottom: 40px;">
+          For 1 strong year, we have been elevating the fitness standard in Sri Lanka alongside our team of expert and
+          elite trainers. From our meticulously maintained floors to our competition-grade equipment, every detail of
+          FitFinity is curated to help you shatter your limits. No gimmicks. Just results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OUR SERVICES ========== -->
+  <section id="services" class="bg-darker" style="padding: 120px 20px;">
+    <div class="container" style="max-width: 1000px;">
+
+      <div style="text-align: center; margin-bottom: 80px;" class="reveal">
+        <h2
+          style="font-size: clamp(3rem, 8vw, 4rem); text-transform: uppercase; font-family: var(--font-heading); color: #fff; line-height: 1.1;">
+          Premium <span class="text-accent">Services</span>
+        </h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <div class="accent-line"></div>
+          </div>
+          <h3>MODERN EQUIPMENTS</h3>
+          <p>Outfitted with competition-grade Eleiko & Rogue equipment. We provide the exact tools used by elite
+            professionals worldwide to ensure you never plateau.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <div class="accent-line"></div>
+          </div>
+          <h3>NUTRITION COUNSELLING</h3>
+          <p>Fuel your body correctly. Our in-house nutritionists offer tailored meal plans and metabolic assessments to
+            maximize your physical output and recovery.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <div class="accent-line"></div>
+          </div>
+          <h3>PT TRAINING</h3>
+          <p>Work 1-on-1 with industry-leading experts who build customized regimens to shatter your limits and hit your
+            goals faster than you thought possible.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <div class="accent-line"></div>
+          </div>
+          <h3>CLEANLINESS & DISCIPLINE</h3>
+          <p>A premium environment demands pristine standards. Our facility is meticulously maintained, fostering an
+            atmosphere of mutual respect and unbreakable discipline.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <div class="accent-line"></div>
+          </div>
+          <h3>BIOMETRIC ACCESS</h3>
+          <p>Seamless, secure entry anytime. Our state-of-the-art biometric systems ensure fast, keyless 24/7 access
+            exclusively for active members.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== TRAINERS SECTION ========== -->
+  <section id="trainers" class="bg-darker position-relative overflow-hidden">
+    <div class="container z-index-2">
+      <div class="section-header reveal">
+        <h2>Our Trainers</h2>
+        <p>Elite experts dedicated to pushing your boundaries and unlocking your true potential.</p>
+      </div>
+
+      <div class="programs-grid">
+        <div class="glass-card reveal reveal-delay-1 trainer-card">
+          <div class="trainer-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=400&q=80"
+              alt="Marcus Vance">
+          </div>
+          <h3>Marcus Vance</h3>
+          <p>Head Strength Coach. Specializes in barbell protocols, calibrated lifting, and progressive overload wave
+            loading.</p>
+        </div>
+
+        <div class="glass-card reveal reveal-delay-2 trainer-card">
+          <div class="trainer-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80"
+              alt="Tariq Al-Mansoor">
+          </div>
+          <h3>Tariq Al-Mansoor</h3>
+          <p>Hyrox & Conditioning Expert. Focuses on aerobic threshold stamina, sled pushing, and high-intensity output.
+          </p>
+        </div>
+
+        <div class="glass-card reveal reveal-delay-3 trainer-card">
+          <div class="trainer-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=400&q=80"
+              alt="Elena Rostova">
+          </div>
+          <h3>Elena Rostova</h3>
+          <p>Mobility & Recovery Specialist. Guides thoracic mobilization, band distraction, and contrast therapy.</p>
+        </div>
+
+        <div class="glass-card reveal reveal-delay-4 trainer-card">
+          <div class="trainer-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=400&q=80"
+              alt="Jaxson Reyes">
+          </div>
+          <h3>Jaxson Reyes</h3>
+          <p>Nutrition & Performance Coach. Specializes in metabolic conditioning, macro-cycling, and functional
+            hypertrophy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section id="testimonials" class="bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Success Stories</h2>
+        <p>Don't just take our word for it. Hear from the community that has transformed with us.</p>
+      </div>
+      <div class="testimonials-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        <div class="glass-card testimonial-card reveal reveal-delay-1" style="padding: 40px;">
+          <div
+            style="color: var(--clr-accent); font-size: 3rem; font-family: serif; line-height: 0.5; margin-bottom: 20px;">
+            "</div>
+          <p style="font-style: italic; color: #ddd; margin-bottom: 20px; font-size: 1.05rem;">FitFinity completely
+            changed my approach to fitness. The 24/7 access and elite equipment mean I never have an excuse to skip a
+            session.</p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 2px;">Sarah Jenkins</h4>
+            <span
+              style="color: var(--clr-accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Lost
+              15kg in 6 months</span>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card reveal reveal-delay-2" style="padding: 40px;">
+          <div
+            style="color: var(--clr-accent); font-size: 3rem; font-family: serif; line-height: 0.5; margin-bottom: 20px;">
+            "</div>
+          <p style="font-style: italic; color: #ddd; margin-bottom: 20px; font-size: 1.05rem;">The PT training here is
+            unmatched. My coach identified weaknesses I didn't know I had and built a program that broke my plateaus in
+            weeks.</p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 2px;">Marcus T.</h4>
+            <span
+              style="color: var(--clr-accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Powerlifter</span>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card reveal reveal-delay-3" style="padding: 40px;">
+          <div
+            style="color: var(--clr-accent); font-size: 3rem; font-family: serif; line-height: 0.5; margin-bottom: 20px;">
+            "</div>
+          <p style="font-style: italic; color: #ddd; margin-bottom: 20px; font-size: 1.05rem;">Between the nutrition
+            counseling and the recovery suites, I finally feel like a professional athlete. This is the only gym I'll
+            ever need.</p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 2px;">Elena D.</h4>
+            <span
+              style="color: var(--clr-accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Hyrox
+              Competitor</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center reveal" style="text-align: center; margin-top: 50px;">
+        <a href="testimonials.html" class="btn-accent"
+          style="display: inline-block; padding: 15px 40px; font-size: 1.1rem; text-decoration: none;">Read More & Add
+          Yours</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="bg-darker position-relative overflow-hidden">
+    <!-- Glow Blob behind pricing -->
+    <div class="pricing-glow-bg"></div>
+    <div class="container z-index-2">
+      <div class="section-header reveal">
+        <h2>Memberships</h2>
+        <p>Invest in yourself with flexible, no-contract access to elite facilities.</p>
+      </div>
+
+      <div class="pricing-grid-custom">
+        <!-- LADIES -->
+        <div class="pricing-card-custom reveal reveal-delay-1">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg></div>
+          <h4>LADIES</h4>
+          <p class="tier-desc">Full gym access for women</p>
+          <div class="price">LKR 10,000<span class="period">/mo</span></div>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Solo access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Full equipment access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Locker room</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Free Wi-Fi</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Showers</li>
+          </ul>
+          <button class="btn-secondary w-100">JOIN NOW</button>
+        </div>
+
+        <!-- COUPLE (Featured) -->
+        <div class="pricing-card-custom featured reveal reveal-delay-2">
+          <div class="featured-banner">MOST POPULAR</div>
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg></div>
+          <h4>COUPLE</h4>
+          <p class="tier-desc">Ideal for couples who want to stay fit together</p>
+          <div class="price">LKR 20,000<span class="period">/mo</span></div>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> 2 member access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Full equipment access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Locker rooms</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Free Wi-Fi</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Showers</li>
+          </ul>
+          <button class="btn-accent w-100">JOIN NOW</button>
+        </div>
+
+        <!-- GENTS -->
+        <div class="pricing-card-custom reveal reveal-delay-3">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg></div>
+          <h4>GENTS</h4>
+          <p class="tier-desc">Full gym access for men</p>
+          <div class="price">LKR 12,000<span class="period">/mo</span></div>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Solo access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Full equipment access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Locker room</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Free Wi-Fi</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg> Showers</li>
+          </ul>
+          <button class="btn-secondary w-100">JOIN NOW</button>
+        </div>
+      </div>
+
+      <!-- FAMILY PLAN -->
+      <div class="family-plan-card reveal">
+        <div class="family-banner">BEST VALUE FOR FAMILIES</div>
+        <div class="family-content-wrapper">
+          <div class="family-left">
+            <div class="icon-box" style="margin-bottom: 10px;"><svg viewBox="0 0 24 24" fill="none"
+                stroke="var(--clr-accent)" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg></div>
+            <h4>FAMILY</h4>
+            <span class="sub-badge">5 Members</span>
+            <p class="family-desc">Perfect for families who want to train together. Get full access for up to 5 members
+              at an unbeatable price.</p>
+          </div>
+          <div class="family-middle">
+            <ul class="feature-list"
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 0; margin-bottom: 20px;">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> 5 member access</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Full equipment access</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Locker rooms</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Free Wi-Fi</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Showers</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Family scheduling flexibility</li>
+            </ul>
+          </div>
+          <div class="family-right">
+            <p class="note">Not available monthly &mdash; choose Quarterly or Annual</p>
+            <button class="btn-accent w-100" style="padding: 15px;">JOIN NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 50px;" class="reveal">
+        <a href="memberships.html" class="btn-secondary" style="padding: 15px 40px; font-size: 1rem;">See More
+          Memberships</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Contact Us</h2>
+        <p>Drop by our Pitakotte location or send us a message to start your transformation.</p>
+      </div>
+
+      <div class="contact-grid" style="align-items: center;">
+        <!-- Text/Info Side -->
+        <div class="contact-info reveal reveal-delay-1" style="padding-right: 4vw;">
+          <h3
+            style="font-size: clamp(1.5rem, 7vw, 3rem); margin-bottom: 15px; font-family: var(--font-heading); line-height: 1.1;">
+            FITFINITY<br><span class="text-accent">PITAKOTTE.</span></h3>
+
+          <div style="display: flex; gap: 40px; margin-top: 40px; margin-bottom: 30px; flex-wrap: wrap;">
+            <div>
+              <h4
+                style="color: #fff; margin-bottom: 10px; font-size: 1.1rem; letter-spacing: 1px; font-family: var(--font-body);">
+                LOCATION</h4>
+              <p style="color: var(--clr-text-muted); margin-bottom: 10px;">FitFinity Fitness<br>Pitakotte, Sri Lanka
+              </p>
+              <a href="https://maps.app.goo.gl/VHpznkycpcsZ4QA56" target="_blank"
+                style="color: var(--clr-accent); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; font-size: 0.9rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Get Directions
+              </a>
+            </div>
+            <div>
+              <h4
+                style="color: #fff; margin-bottom: 10px; font-size: 1.1rem; letter-spacing: 1px; font-family: var(--font-body);">
+                STAFFED HOURS</h4>
+              <p style="color: var(--clr-text-muted);">Mon - Fri: 6:00 AM - 9:00 PM<br>Sat - Sun: 8:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+
+          <div
+            style="display: flex; align-items: center; gap: 12px; margin-top: 10px; padding: 15px 20px; background: rgba(0, 229, 255, 0.05); border-left: 3px solid var(--clr-accent); border-radius: 4px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0110 0v4"></path>
+            </svg>
+            <p style="color: var(--clr-accent); font-weight: 600; font-size: 0.9rem; margin: 0; letter-spacing: 1px;">
+              24/7 BIOMETRIC ACCESS FOR MEMBERS</p>
+          </div>
+
+          <div style="margin-top: 40px;">
+            <h4
+              style="color: #fff; margin-bottom: 15px; font-size: 1.1rem; letter-spacing: 1px; font-family: var(--font-body);">
+              CONNECT WITH US</h4>
+            <div style="display: flex; gap: 15px;">
+              <a href="#"
+                style="display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--clr-primary); text-decoration: none; transition: all 0.3s ease;"
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.1)'"
+                onmouseout="this.style.transform='none'; this.style.background='rgba(255, 255, 255, 0.05)'">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+              </a>
+              <a href="#"
+                style="display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--clr-primary); text-decoration: none; transition: all 0.3s ease;"
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.1)'"
+                onmouseout="this.style.transform='none'; this.style.background='rgba(255, 255, 255, 0.05)'">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#"
+                style="display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--clr-primary); text-decoration: none; transition: all 0.3s ease;"
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.1)'"
+                onmouseout="this.style.transform='none'; this.style.background='rgba(255, 255, 255, 0.05)'">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="contact-form reveal reveal-delay-2"
+          style="background: rgba(15, 15, 15, 0.6); border: 1px solid rgba(255, 255, 255, 0.05); padding: 50px 40px; border-radius: 8px; backdrop-filter: blur(10px);">
+          <h3 style="margin-bottom: 30px; font-size: 1.5rem; letter-spacing: 1px;">SEND A MESSAGE</h3>
+          <form onsubmit="event.preventDefault();">
+            <div class="form-group" style="margin-bottom: 20px;">
+              <input type="text" placeholder="Your Name" required
+                style="width: 100%; padding: 16px 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-size: 0.95rem; font-family: var(--font-body);">
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+              <input type="email" placeholder="Your Email" required
+                style="width: 100%; padding: 16px 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-size: 0.95rem; font-family: var(--font-body);">
+            </div>
+            <div class="form-group" style="margin-bottom: 30px;">
+              <textarea placeholder="How can we help you?" rows="4" required
+                style="width: 100%; padding: 16px 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-size: 0.95rem; font-family: var(--font-body); resize: vertical;"></textarea>
+            </div>
+            <button class="btn-accent w-100" type="submit" style="padding: 18px; font-size: 1rem;">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+
+      <div
+        style="margin-top: 60px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); height: 400px; filter: grayscale(100%) invert(92%) contrast(83%);"
+        class="reveal">
+        <iframe
+          src="https://maps.google.com/maps?q=Fitfinity+Fitness,+Pitakotte,+Sri+Lanka&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="minimal-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Logo White@300x.png" alt="FitFinity Logo" style="height: 40px; margin-right: 15px;">
+        </div>
+        <div class="footer-links">
+          <a href="#about">About Us</a>
+          <a href="#trainers">Our Trainers</a>
+          <a href="#pricing">Memberships</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FitFinity Fitness. Pitakotte, Sri Lanka. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JOIN MODAL ========== -->
+  <div class="modal-overlay" id="joinModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <h3 style="font-family: var(--font-heading); color: #fff; text-transform: uppercase; margin-bottom: 10px;">Join
+        the Family</h3>
+      <p style="color: #aaa; margin-bottom: 25px; font-size: 0.95rem;">Follow us for daily updates and subscribe to our
+        newsletter for exclusive events.</p>
+
+      <div class="modal-socials" style="display: flex; gap: 15px; justify-content: center; margin-bottom: 30px;">
+        <a href="#"
+          style="color: #fff; background: #3b5998; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+          Facebook
+        </a>
+        <a href="#"
+          style="color: #fff; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          Instagram
+        </a>
+      </div>
+
+      <div class="modal-divider"
+        style="text-align: center; color: #555; margin-bottom: 20px; font-size: 0.85rem; text-transform: uppercase;">Or
+        subscribe via email</div>
+
+      <form class="modal-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email address" required
+          style="width: 100%; padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.5); color: #fff; margin-bottom: 15px;">
+        <button type="submit" class="btn-accent w-100" style="padding: 15px;">GET UPDATES</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

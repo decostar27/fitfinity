@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Reviews — FitFinity Fitness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="Logo White@300x.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .review-form {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .review-form label { 
+      display: block; 
+      margin-bottom: 10px; 
+      color: #ccc; 
+      font-size: 0.95rem; 
+      text-transform: uppercase; 
+      letter-spacing: 1px; 
+    }
+    .review-form input, .review-form textarea {
+      width: 100%; 
+      padding: 15px; 
+      margin-bottom: 25px;
+      background: rgba(0,0,0,0.5); 
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #fff; 
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    .review-form input:focus, .review-form textarea:focus {
+      outline: none;
+      border-color: var(--clr-accent);
+    }
+    .review-form button { 
+      width: 100%; 
+      padding: 15px;
+    }
+  </style>
+</head>
+<body class="bg-dark">
+  
+  <div class="noise-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" style="background: rgba(10, 10, 10, 0.95);">
+    <a href="index.html" class="nav-logo">
+      <img src="Logo White@300x.png" alt="FitFinity" class="nav-logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Back to Home</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <section style="padding: 180px 20px 80px; text-align: center;">
+    <div class="container">
+      <h1 style="font-family: var(--font-heading); font-size: clamp(2.5rem, 6vw, 4rem); color: #fff; margin-bottom: 20px; text-transform: uppercase;">
+        Community <span class="text-accent">Reviews</span>
+      </h1>
+      <p style="color: #aaa; font-size: 1.2rem; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+        See what our community has to say, and share your own FitFinity journey below.
+      </p>
+    </div>
+  </section>
+
+  <!-- Reviews Grid -->
+  <section style="padding: 40px 20px;">
+    <div class="container" style="max-width: 1200px;">
+      
+      <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 100px;">
+        <!-- Card 1 -->
+        <div class="glass-card testimonial-card" style="padding: 40px;">
+          <div style="color: var(--clr-accent); font-size: 3rem; font-family: serif; line-height: 0.5; margin-bottom: 20px;">"</div>
+          <p style="font-style: italic; color: #ddd; margin-bottom: 20px; font-size: 1.05rem; line-height: 1.6;">FitFinity completely changed my approach to fitness. The 24/7 access and elite equipment mean I never have an excuse to skip a session.</p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 2px;">Sarah Jenkins</h4>
+            <span style="color: var(--clr-accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Lost 15kg in 6 months</span>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="glass-card testimonial-card" style="padding: 40px;">
+          <div style="color: var(--clr-accent); font-size: 3rem; font-family: serif; line-height: 0.5; margin-bottom: 20px;">"</div>
+          <p style="font-style: italic; color: #ddd; margin-bottom: 20px; font-size: 1.05rem; line-height: 1.6;">The PT training here is unmatched. My coach identified weaknesses I didn't know I had and built a program that broke my plateaus in weeks.</p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 2px;">Marcus T.</h4>
+            <span style="color: var(--clr-accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Powerlifter</span>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="glass-card testimonial-card" style="padding: 40px;">
+          <div style="color: var(--clr-accent); font-size: 3rem; font-family: serif; line-height: 0.5; margin-bottom: 20px;">"</div>
+          <p style="font-style: italic; color: #ddd; margin-bottom: 20px; font-size: 1.05rem; line-height: 1.6;">Between the nutrition counseling and the recovery suites, I finally feel like a professional athlete. This is the only gym I'll ever need.</p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 2px;">Elena D.</h4>
+            <span style="color: var(--clr-accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Hyrox Competitor</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Review Form -->
+      <div class="review-form-section" style="padding-bottom: 100px;">
+        <h2 style="font-family: var(--font-heading); color: #fff; text-align: center; margin-bottom: 40px; font-size: 2.5rem; text-transform: uppercase;">Write a Review</h2>
+        <div class="review-form">
+          <form onsubmit="event.preventDefault(); alert('Thank you for your review! It has been submitted and is pending approval.'); this.reset();">
+            <label>Your Name</label>
+            <input type="text" placeholder="e.g. John Doe" required>
+            
+            <label>Your Achievement / Title</label>
+            <input type="text" placeholder="e.g. Lost 10kg or Powerlifter" required>
+            
+            <label>Your Review</label>
+            <textarea rows="5" placeholder="Tell us about your experience..." required></textarea>
+            
+            <button type="submit" class="btn-accent">Submit Review</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitFinity Fitness — Memberships</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="Logo White@300x.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* MEMBERSHIP PAGE SPECIFIC STYLES */
+    .page-header {
+      padding: 150px 20px 80px;
+      text-align: center;
+      background: rgba(8, 8, 8, 0.8);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .page-header h1 {
+      font-size: clamp(2rem, 8vw, 4.5rem);
+      font-family: var(--font-heading);
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .page-header p {
+      color: #aaa;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .pricing-toggle-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+    .pricing-toggle {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 40px;
+      display: flex;
+      padding: 6px;
+      gap: 5px;
+    }
+    .pricing-toggle .toggle-btn {
+      background: transparent;
+      border: none;
+      color: #aaa;
+      font-family: var(--font-body);
+      font-weight: 600;
+      padding: 12px 35px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+    .pricing-toggle .toggle-btn:hover {
+      color: #fff;
+    }
+    .pricing-toggle .toggle-btn.active {
+      background: #0d47a1; /* Matched to screenshot's deep blue */
+      color: #fff;
+    }
+    
+    /* For this page we'll override the accent color to match the screenshot's blue vibe if needed, but keeping global vars for now */
+    .pricing-card-custom.featured {
+      border-color: #0d47a1;
+    }
+    .pricing-card-custom .featured-banner {
+      background: #0d47a1;
+      color: #fff;
+    }
+    .pricing-card-custom.featured .btn-accent {
+      background: #0d47a1;
+      color: #fff;
+    }
+    .family-banner {
+      background: #0d47a1;
+      color: #fff;
+    }
+
+    @media (max-width: 480px) {
+      .pricing-toggle {
+        padding: 4px;
+        gap: 2px;
+      }
+      .pricing-toggle .toggle-btn {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+      }
+    }
+    @media (max-width: 992px) {
+      .nav-actions {
+        display: flex !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-darker">
+  
+  <div class="noise-overlay"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="Logo White@300x.png" alt="FitFinity" class="nav-logo-img">
+    </a>
+    <div class="nav-actions" style="margin-left: auto;">
+      <a href="index.html" style="color: #fff; text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Memberships</h1>
+    <p>Choose the plan that fits your lifestyle. No hidden fees. Pure performance.</p>
+  </div>
+
+  <section style="padding: 60px 20px 120px;">
+    <div class="container">
+      
+      <!-- TOGGLE -->
+      <div class="pricing-toggle-wrapper">
+        <div class="pricing-toggle">
+          <button class="toggle-btn active" data-period="monthly">MONTHLY</button>
+          <button class="toggle-btn" data-period="quarterly">QUARTERLY</button>
+          <button class="toggle-btn" data-period="annual">ANNUAL</button>
+        </div>
+      </div>
+
+      <div class="pricing-grid-custom">
+        <!-- LADIES -->
+        <div class="pricing-card-custom">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h4>LADIES</h4>
+          <p class="tier-desc">Full gym access for women</p>
+          <div class="price" id="price-ladies">LKR 10,000<span class="period">/mo</span></div>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Solo access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Full equipment access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Locker room</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Free Wi-Fi</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Showers</li>
+          </ul>
+          <button class="btn-secondary w-100">JOIN NOW</button>
+        </div>
+        
+        <!-- COUPLE (Featured) -->
+        <div class="pricing-card-custom featured">
+          <div class="featured-banner">MOST POPULAR</div>
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+          <h4>COUPLE</h4>
+          <p class="tier-desc">Ideal for couples who want to stay fit together</p>
+          <div class="price" id="price-couple">LKR 20,000<span class="period">/mo</span></div>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> 2 member access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Full equipment access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Locker rooms</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Free Wi-Fi</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Showers</li>
+          </ul>
+          <button class="btn-accent w-100">JOIN NOW</button>
+        </div>
+
+        <!-- GENTS -->
+        <div class="pricing-card-custom">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h4>GENTS</h4>
+          <p class="tier-desc">Full gym access for men</p>
+          <div class="price" id="price-gents">LKR 12,000<span class="period">/mo</span></div>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Solo access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Full equipment access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Locker room</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Free Wi-Fi</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Showers</li>
+          </ul>
+          <button class="btn-secondary w-100">JOIN NOW</button>
+        </div>
+      </div>
+
+      <!-- FAMILY PLAN -->
+      <div class="family-plan-card">
+        <div class="family-banner">BEST VALUE FOR FAMILIES</div>
+        <div class="family-content-wrapper">
+          <div class="family-left">
+            <div class="icon-box" style="margin-bottom: 10px;"><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+            <h4>FAMILY</h4>
+            <span class="sub-badge" style="background: rgba(255,255,255,0.05);">5 Members</span>
+            <p class="family-desc">Perfect for families who want to train together. Get full access for up to 5 members at an unbeatable price.</p>
+          </div>
+          <div class="family-middle">
+            <ul class="feature-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 0; margin-bottom: 20px;">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> 5 member access</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Full equipment access</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Locker rooms</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Free Wi-Fi</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Showers</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="#0d47a1"><polyline points="20 6 9 17 4 12"></polyline></svg> Family scheduling</li>
+            </ul>
+          </div>
+          <div class="family-right">
+             <div class="price" id="price-family" style="font-family: var(--font-heading); font-size: 2.5rem; color: #fff; margin-bottom: 10px;">LKR ---<span class="period" style="font-size: 1rem; color: #888; font-family: var(--font-body);">/mo</span></div>
+             <p class="note" id="family-note">Not available monthly</p>
+             <button class="btn-accent w-100" style="padding: 15px; background: #0d47a1; color: #fff;">JOIN NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== JOIN MODAL ========== -->
+  <div class="modal-overlay" id="joinModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <h3 style="font-family: var(--font-heading); color: #fff; text-transform: uppercase; margin-bottom: 10px;">Join the Family</h3>
+      <p style="color: #aaa; margin-bottom: 25px; font-size: 0.95rem;">Follow us for daily updates and subscribe to our newsletter for exclusive events.</p>
+      
+      <div class="modal-socials" style="display: flex; gap: 15px; justify-content: center; margin-bottom: 30px;">
+        <a href="#" style="color: #fff; background: #3b5998; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          Facebook
+        </a>
+        <a href="#" style="color: #fff; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          Instagram
+        </a>
+      </div>
+
+      <div class="modal-divider" style="text-align: center; color: #555; margin-bottom: 20px; font-size: 0.85rem; text-transform: uppercase;">Or subscribe via email</div>
+
+      <form class="modal-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email address" required style="width: 100%; padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.5); color: #fff; margin-bottom: 15px;">
+        <button type="submit" class="btn-accent w-100" style="padding: 15px;">GET UPDATES</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const pricingData = {
+      monthly: {
+        ladies: 'LKR 10,000', period: '/mo',
+        couple: 'LKR 20,000',
+        gents: 'LKR 12,000',
+        family: 'LKR ---', familyNote: 'Not available monthly'
+      },
+      quarterly: {
+        ladies: 'LKR 25,000', period: '/qtr',
+        couple: 'LKR 50,000',
+        gents: 'LKR 30,000',
+        family: 'LKR 80,000', familyNote: 'Best Value For Families'
+      },
+      annual: {
+        ladies: 'LKR ---', period: '/yr',
+        couple: 'LKR ---',
+        gents: 'LKR ---',
+        family: 'LKR ---', familyNote: 'Values to be provided'
+      }
+    };
+
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+    const ladiesPrice = document.getElementById('price-ladies');
+    const couplePrice = document.getElementById('price-couple');
+    const gentsPrice = document.getElementById('price-gents');
+    const familyPrice = document.getElementById('price-family');
+    const familyNote = document.getElementById('family-note');
+
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all
+        toggleBtns.forEach(b => b.classList.remove('active'));
+        // Add to clicked
+        btn.classList.add('active');
+
+        const period = btn.dataset.period;
+        const data = pricingData[period];
+
+        // Update DOM with simple fade animation
+        const prices = [ladiesPrice, couplePrice, gentsPrice, familyPrice];
+        prices.forEach(el => el.style.opacity = '0');
+        
+        setTimeout(() => {
+          ladiesPrice.innerHTML = `${data.ladies}<span class="period">${data.period}</span>`;
+          couplePrice.innerHTML = `${data.couple}<span class="period">${data.period}</span>`;
+          gentsPrice.innerHTML = `${data.gents}<span class="period">${data.period}</span>`;
+          familyPrice.innerHTML = `${data.family}<span class="period" style="font-size: 1rem; color: #888; font-family: var(--font-body);">${data.period}</span>`;
+          familyNote.textContent = data.familyNote;
+          
+          prices.forEach(el => el.style.opacity = '1');
+        }, 200);
+      });
+    });
+  </script>
+</body>
+</html>
