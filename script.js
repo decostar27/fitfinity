@@ -3,6 +3,17 @@
    Smooth, Apple-like interactions
    ============================================ */
 
+// ─── PAGE LOADER LOGIC ─────────────────────────
+window.addEventListener('load', () => {
+  const loader = document.getElementById('pageLoader');
+  if (loader) {
+    loader.classList.add('hidden');
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 800);
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -172,5 +183,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
+
+  // ─── PAGE TRANSITION LOADER ────────────────────
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      // Apply loader transition to internal pages (not anchors, not external)
+      if (href && !href.startsWith('#') && href !== '#' && link.target !== '_blank' && !href.startsWith('mailto:') && !href.startsWith('http')) {
+        e.preventDefault();
+        const loader = document.getElementById('pageLoader');
+        if (loader) {
+          loader.style.display = 'flex';
+          requestAnimationFrame(() => {
+            loader.classList.remove('hidden');
+          });
+          
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500); // Wait for transition
+        } else {
+          window.location.href = href;
+        }
+      }
+    });
+  });
 
 });
