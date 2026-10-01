@@ -36,6 +36,29 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = document.getElementById('contactEmail').value;
             const message = document.getElementById('contactMessage').value;
 
+            const toast = document.getElementById('toastNotification');
+            const toastMsg = document.getElementById('toastMessage');
+
+            function showToast(message, isError = false) {
+                if (!toast || !toastMsg) return;
+                
+                toastMsg.innerText = message;
+                
+                if (isError) {
+                    toast.classList.add('error');
+                    toast.classList.remove('success');
+                } else {
+                    toast.classList.add('success');
+                    toast.classList.remove('error');
+                }
+                
+                toast.classList.add('show');
+                
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 5000);
+            }
+
             try {
                 await addDoc(collection(db, "contacts"), {
                     name: name,
@@ -44,11 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     createdAt: serverTimestamp()
                 });
                 
-                alert('Thank you for reaching out! We will get back to you soon.');
+                showToast('Thank you for reaching out! We will get back to you soon.');
                 contactForm.reset();
             } catch (error) {
                 console.error("Error adding document: ", error);
-                alert('Oops! Something went wrong. Please try again later.');
+                showToast('Oops! Something went wrong. Please try again later.', true);
             } finally {
                 submitBtn.innerText = originalText;
                 submitBtn.disabled = false;
