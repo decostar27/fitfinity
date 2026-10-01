@@ -4,15 +4,20 @@
    ============================================ */
 
 // ─── PAGE LOADER LOGIC ─────────────────────────
-window.addEventListener('load', () => {
+function hideLoader() {
   const loader = document.getElementById('pageLoader');
-  if (loader) {
+  if (loader && !loader.classList.contains('hidden')) {
     loader.classList.add('hidden');
     setTimeout(() => {
       loader.style.display = 'none';
     }, 800);
   }
-});
+}
+
+window.addEventListener('load', hideLoader);
+
+// Fallback: hide loader after 2 seconds even if page is still loading assets
+setTimeout(hideLoader, 2000);
 
 document.addEventListener('DOMContentLoaded', () => {
 
