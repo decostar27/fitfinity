@@ -348,7 +348,7 @@
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg> Showers</li>
           </ul>
-          <button class="btn-secondary w-100">JOIN NOW</button>
+          <button class="btn-secondary w-100 apply-plan-btn" data-plan="LADIES PLAN">JOIN NOW</button>
         </div>
 
         <!-- COUPLE (Featured) -->
@@ -379,7 +379,7 @@
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg> Showers</li>
           </ul>
-          <button class="btn-accent w-100">JOIN NOW</button>
+          <button class="btn-accent w-100 apply-plan-btn" data-plan="COUPLE PLAN">JOIN NOW</button>
         </div>
 
         <!-- GENTS -->
@@ -407,7 +407,7 @@
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg> Showers</li>
           </ul>
-          <button class="btn-secondary w-100">JOIN NOW</button>
+          <button class="btn-secondary w-100 apply-plan-btn" data-plan="GENTS PLAN">JOIN NOW</button>
         </div>
       </div>
 
@@ -453,7 +453,7 @@
           </div>
           <div class="family-right">
             <p class="note">Not available monthly &mdash; choose Quarterly or Annual</p>
-            <button class="btn-accent w-100" style="padding: 15px;">JOIN NOW</button>
+            <button class="btn-accent w-100 apply-plan-btn" data-plan="FAMILY PLAN" style="padding: 15px;">JOIN NOW</button>
           </div>
         </div>
       </div>
@@ -642,6 +642,20 @@
           style="width: 100%; padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.5); color: #fff; margin-bottom: 15px;">
         <button type="submit" class="btn-accent w-100" style="padding: 15px;">GET UPDATES</button>
       </form>
+    </div>
+  </div>
+
+  <!-- ========== APPLY MODAL ========== -->
+  <div class="modal-overlay" id="applyModal">
+    <div class="modal-content" style="text-align: center;">
+      <button class="modal-close" id="closeApplyModal">&times;</button>
+      <h3 style="font-family: var(--font-heading); color: #fff; text-transform: uppercase; margin-bottom: 10px;">
+        <span id="applyPlanName">PLAN</span>
+      </h3>
+      <h4 style="color: var(--clr-accent); font-family: var(--font-heading); letter-spacing: 2px; margin-bottom: 25px;">FITFINITY</h4>
+      <p style="color: #aaa; margin-bottom: 30px; font-size: 0.95rem;">You are one step away from transforming your life. Complete your application via our secure form.</p>
+      
+      <a href="YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn-accent w-100" style="padding: 15px; text-decoration: none; display: block;">APPLY NOW</a>
     </div>
   </div>
 

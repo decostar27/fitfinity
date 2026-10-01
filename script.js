@@ -189,6 +189,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // ─── APPLY MODAL LOGIC ───────────────────────────
+  const applyBtns = document.querySelectorAll('.apply-plan-btn');
+  const applyModal = document.getElementById('applyModal');
+  const closeApplyModal = document.getElementById('closeApplyModal');
+  const applyPlanName = document.getElementById('applyPlanName');
+
+  if (applyModal) {
+    applyBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const plan = btn.getAttribute('data-plan');
+        if (applyPlanName && plan) {
+          applyPlanName.innerText = plan;
+        }
+        applyModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    if (closeApplyModal) {
+      closeApplyModal.addEventListener('click', () => {
+        applyModal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+
+    applyModal.addEventListener('click', (e) => {
+      if (e.target === applyModal) {
+        applyModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
   // ─── PAGE TRANSITION LOADER ────────────────────
   document.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', (e) => {
