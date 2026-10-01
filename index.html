@@ -555,17 +555,17 @@
         <div class="contact-form reveal reveal-delay-2"
           style="background: rgba(15, 15, 15, 0.6); border: 1px solid rgba(255, 255, 255, 0.05); padding: 50px 40px; border-radius: 8px; backdrop-filter: blur(10px);">
           <h3 style="margin-bottom: 30px; font-size: 1.5rem; letter-spacing: 1px;">SEND A MESSAGE</h3>
-          <form onsubmit="event.preventDefault();">
+          <form id="contactForm">
             <div class="form-group" style="margin-bottom: 20px;">
-              <input type="text" placeholder="Your Name" required
+              <input type="text" id="contactName" placeholder="Your Name" required
                 style="width: 100%; padding: 16px 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-size: 0.95rem; font-family: var(--font-body);">
             </div>
             <div class="form-group" style="margin-bottom: 20px;">
-              <input type="email" placeholder="Your Email" required
+              <input type="email" id="contactEmail" placeholder="Your Email" required
                 style="width: 100%; padding: 16px 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-size: 0.95rem; font-family: var(--font-body);">
             </div>
             <div class="form-group" style="margin-bottom: 30px;">
-              <textarea placeholder="How can we help you?" rows="4" required
+              <textarea id="contactMessage" placeholder="How can we help you?" rows="4" required
                 style="width: 100%; padding: 16px 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-size: 0.95rem; font-family: var(--font-body); resize: vertical;"></textarea>
             </div>
             <button class="btn-accent w-100" type="submit" style="padding: 18px; font-size: 1rem;">SEND MESSAGE</button>
@@ -649,6 +649,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
+  <script type="module" src="firebase-contact.js"></script>
 </body>
 
 </html>
