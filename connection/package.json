@@ -1,12 +1,13 @@
 {
   "name": "connection",
   "version": "0.1.0",
-  "private": true,
+  "main": "main.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "desktop": "electron ."
   },
   "dependencies": {
     "express": "^5.2.1",

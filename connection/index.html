@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connectio - Liquid Glass Admin</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -196,12 +196,70 @@
     <section id="memberships" class="page-section">
       <div class="page-header">
         <div>
-          <h1 class="page-title">Membership Plans</h1>
-          <p class="page-subtitle">Configure pricing and features</p>
+          <h1 class="page-title">Memberships</h1>
+          <p class="page-subtitle">Manage active members</p>
         </div>
+        <button class="btn-primary" id="btn-add-member">
+          <i data-lucide="user-plus"></i> Add Member
+        </button>
       </div>
+      
       <div class="glass-panel p-2">
-        <p>Membership configuration will go here.</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Member Name</th>
+              <th>Email</th>
+              <th>Plan</th>
+              <th>Join Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="members-table-body">
+            <!-- Members will be populated here via JS -->
+            <tr>
+              <td colspan="5" style="text-align: center;">Loading members...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add Member Modal -->
+      <div class="modal-overlay" id="member-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 style="font-weight: 800; font-size: 1.5rem;">Add New Member</h2>
+            <button id="btn-close-member-modal" style="font-size: 1.5rem; color: var(--text-muted);">&times;</button>
+          </div>
+          <form id="add-member-form">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" id="member-name" required placeholder="e.g. John Doe">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" id="member-email" required placeholder="e.g. john@example.com">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label">Membership Plan</label>
+                <select id="member-plan" required style="padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.15); background: rgba(0, 0, 0, 0.2); color: var(--text-main);">
+                  <option value="Basic">Basic Plan</option>
+                  <option value="Pro">Pro Plan</option>
+                  <option value="Premium">Premium Plan</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Join Date</label>
+                <input type="date" id="member-date" required>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 1rem;">
+              <button type="button" class="btn-secondary" id="btn-cancel-member-modal">Cancel</button>
+              <button type="submit" class="btn-primary">Save Member</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 

@@ -19,7 +19,7 @@ export default function SubscribersPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = onSnapshot(collection(db, "subscribers"), (snapshot) => {
+    const unsubscribe = onSnapshot(collection(db, "subscription"), (snapshot) => {
       const subscribersData = snapshot.docs.map(doc => ({
         id: doc.id,
         ...doc.data()
@@ -38,7 +38,7 @@ export default function SubscribersPage() {
     e.preventDefault();
     if (newEmail) {
       try {
-        await addDoc(collection(db, "subscribers"), {
+        await addDoc(collection(db, "subscription"), {
           email: newEmail,
           subscribedAt: new Date().toISOString(),
           status: "Active"
@@ -53,7 +53,7 @@ export default function SubscribersPage() {
 
   const handleDeleteSubscriber = async (id: string) => {
     try {
-      await deleteDoc(doc(db, "subscribers", id));
+      await deleteDoc(doc(db, "subscription", id));
     } catch (error) {
       console.error("Error deleting subscriber: ", error);
     }
